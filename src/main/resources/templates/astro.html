@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Astro Pic</title>
+</head>
+
+<body >
+    NASA's astronomy picture of the day<h3 th:text="${astroPic.title}"></h3>
+    <img th:src="${astroPic.url}"/>
+    <div th:text="${astroPic.explanation}"></div>
+</body>
+</html>
